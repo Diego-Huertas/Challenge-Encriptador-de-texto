@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-col">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Encryption</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header_logo" src="./img/logo.png" alt="alura-logo">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="typeText" class="type__text" placeholder="Enter the text here "></textarea>
+                <div class="left__footer">
+                    <img src="./img/exclm.png" alt="">
+                    <span class="left__info">Lowercase letters only with no accents</span>
+                    <div class="left__buttons">
+                        <button id="encryptButton" class="encrypt__button">Encryt</button>
+                        <button id="decryptButton" class="decrypt__button">Decrypt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right adjust">
+                <img class="draw" src="./img/person.png" alt="">
+                <div class="">
+                    <p id="finalMessage" class="final__message">No message found</p><!--adjust-->
+                    <p class="right__info">Enter the text to be encrypted or decrypted</p>
+                </div>
+                <button id="copyButton" class="copy__button hidden">Copy</button>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footer">&copy; Diego Huertas - 2024</div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
