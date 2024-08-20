@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     encryptButton.addEventListener('click', () => {
-        const text = typeText.value.toLowerCase();
+        const text = typeText.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         const encryptedText = encrypt(text);
         updateFinalMessage(encryptedText);
     });
 
     decryptButton.addEventListener('click', () => {
-        const text = typeText.value.toLowerCase();
+        const text = typeText.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         const decryptedText = decrypt(text);
         updateFinalMessage(decryptedText);
     });
